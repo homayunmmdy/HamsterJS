@@ -2,6 +2,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 // Register ScrollTrigger plugin
@@ -24,56 +25,29 @@ const JasonInfo = () => {
     });
 
     // Add animations to the timeline
-    tl.to(".first-vd", { opacity: 0, duration: 1, ease: "power1.inOut" })
-     .to(".jason .img-box", {
+    tl.to(".first-vd", { opacity: 0, duration: 1, ease: "power1.inOut" }).to(
+      ".jason .img-box",
+      {
         y: -300,
         duration: 1,
         ease: "power1.inOut",
-      }, "<"); // The "<" positions this animation to start at the same time as the previous one
-
-    // Alternative: If you want separate ScrollTriggers for each animation
-    // gsap.to(".first-vd", {
-    //   opacity: 0,
-    //   duration: 1,
-    //   ease: "power1.inOut",
-    //   scrollTrigger: {
-    //     trigger: ".jason",
-    //     start: "top 90%",
-    //     end: "10% center",
-    //     scrub: 2,
-    //   },
-    // });
-    // 
-    // gsap.to(".jason .img-box", {
-    //   y: -300,
-    //   duration: 1,
-    //   ease: "power1.inOut",
-    //   scrollTrigger: {
-    //     trigger: ".jason",
-    //     start: "top center",
-    //     end: "80% center",
-    //     scrub: 2,
-    //   },
-    // });
+      },
+      "<",
+    );
   });
-  
+  const t = useTranslations("home");
   return (
     <section className="jason">
       <div className="max-w-lg jason-content">
-        <h1>Jason Duval</h1>
-        <h2>Jason wants an easy life, but things just keep getting harder.</h2>
-        <p>
-          Jason grew up around grifters and crooks. After a stint in the Army
-          trying to shake off his troubled teens, he found himself in the Keys
-          doing what he knows best, working for local drug runners. It might be
-          time to try something new.
-        </p>
+        <h1>{t("jason_name")}</h1>
+        <h2>{t("jason_subTitle")}</h2>
+        <p>{t("jason_description")}</p>
         <div className="jason-2">
           <Image
             src="/images/jason-2.webp"
             width="3840"
             height="2160"
-            alt="jason sitting on his motor and a gun on his hand"
+            alt={t("jason_image_alt_2")}
           />
         </div>
       </div>
@@ -83,7 +57,7 @@ const JasonInfo = () => {
             src="/images/jason-1.webp"
             width="3840"
             height="2160"
-            alt="jason sitting in car driving and looking outside"
+            alt={t("jason_image_alt_1")}
           />
         </div>
         <div className="jason-3">
@@ -91,7 +65,7 @@ const JasonInfo = () => {
             src="/images/jason-3.webp"
             width="3840"
             height="2160"
-            alt="jason and his friend sitting in the bar and drinking"
+            alt={t("jason_image_alt_3")}
           />
         </div>
       </div>

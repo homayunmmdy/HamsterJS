@@ -1,5 +1,19 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "home": {
+    "coming" : "Coming",
+    "november" : "November",
+    "jason_name": "Jason Duval",
+    "jason_subTitle": "Jason wants an easy life, but things just keep getting harder.",
+    "jason_description": "Jason grew up around grifters and crooks. After a stint in the Army trying to shake off his troubled teens, he found himself in the Keys doing what he knows best, working for local drug runners. It might be time to try something new.",
+    "jason_image_alt_1": "jason sitting in car driving and looking outside",
+    "jason_image_alt_2": "jason sitting on his motor and a gun on his hand",
+    "jason_image_alt_3": "jason and his friend sitting in the bar and drinking",
+    "lucia_name": "Lucia Caminos",
+    "lucia_subTitle": "Lucia's father taught her to fight as soon as she could walk.",
+    "lucia_description": "Life has been coming at her swinging ever since. Fighting for her family landed her in the Leonida Penitentiary. Sheer luck got her out. Lucia's learned her lesson — only smart moves from here.",
+    "lucia_image_alt_1": "lucia is angry and hit the boxing bag",
+    "lucia_image_alt_2": "lucia in the pool",
+    "lucia_image_alt_3": "lucia is arrested and is going into jail",
+    "lucia_more" : "More than anything, Lucia wants the good life her mom has dreamed of since their days in Liberty City — but instead of half-baked fantasies, Lucia is prepared to take matters into her own hands."
   }
 }

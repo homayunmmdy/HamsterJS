@@ -1,5 +1,19 @@
 {
-  "HomePage": {
-    "title": "Hallo welt!"
+  "home": {
+    "coming": "Demnächst",
+    "november": "November",
+    "jason_name": "Jason Duval",
+    "jason_subTitle": "Jason will ein einfaches Leben, aber die Dinge werden einfach immer schwieriger.",
+    "jason_description": "Jason wuchs unter Betrügern und Gaunern auf. Nach einer Zeit bei der Armee, in der er versuchte, seine schwierige Jugend hinter sich zu lassen, fand er sich in den Keys wieder und tat das, was er am besten kann: für lokale Drogenschmuggler arbeiten. Es könnte an der Zeit sein, etwas Neues auszuprobieren.",
+    "jason_image_alt_1": "Jason sitzt im Auto, fährt und schaut nach draußen",
+    "jason_image_alt_2": "Jason sitzt auf seinem Motorrad, eine Waffe in der Hand",
+    "jason_image_alt_3": "Jason und sein Freund sitzen in der Bar und trinken",
+    "lucia_name": "Lucia Caminos",
+    "lucia_subTitle": "Lucias Vater brachte ihr das Kämpfen bei, sobald sie laufen konnte.",
+    "lucia_description": "Seitdem prasselt das Leben ununterbrochen auf sie ein. Der Kampf für ihre Familie brachte sie in die Haftanstalt Leonida. Pures Glück holte sie wieder heraus. Lucia hat ihre Lektion gelernt — von jetzt an nur noch clevere Schritte.",
+    "lucia_image_alt_1": "Lucia ist wütend und schlägt auf den Boxsack ein",
+    "lucia_image_alt_2": "Lucia im Pool",
+    "lucia_image_alt_3": "Lucia wird verhaftet und kommt ins Gefängnis",
+    "lucia_more": "Mehr als alles andere will Lucia das gute Leben, von dem ihre Mutter seit ihren Tagen in Liberty City träumt — aber statt halbgarer Fantasien ist Lucia bereit, die Sache selbst in die Hand zu nehmen."
   }
 }

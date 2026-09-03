@@ -1,6 +1,7 @@
 "use client";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const LuciaInfo = () => {
@@ -31,10 +32,10 @@ const LuciaInfo = () => {
         duration: 1,
         ease: "power1.inOut",
       },
-      "<"
+      "<",
     );
   });
-
+  const t = useTranslations("home");
   return (
     <section className="lucia-life">
       <div className="flex flex-col gap-5 items-end img-box lg:1/2 ps-10 mt-96">
@@ -43,7 +44,7 @@ const LuciaInfo = () => {
             width="3840"
             height="2160"
             src="/images/lucia-1.webp"
-            alt="lucia is angry and hit the boxing bag"
+            alt={t("lucia_image_alt_1")}
           />
         </div>
         <div className="lucia-3">
@@ -51,35 +52,25 @@ const LuciaInfo = () => {
             width="3840"
             height="2160"
             src="/images/lucia-3.webp"
-            alt="lucia is arrested and is going into jail"
+            alt={t("lucia_image_alt_3")}
           />
         </div>
       </div>
       <div className="lg:w-1/2 lucia-life-content">
         <div className="max-w-xl lg:ps-32 ps-10">
-          <h1>Lucia Caminos</h1>
-          <h2>
-            Lucia&apos;s father taught her to fight as soon as she could walk.
-          </h2>
-          <p>
-            Life has been coming at her swinging ever since. Fighting for her
-            family landed her in the Leonida Penitentiary. Sheer luck got her
-            out. Lucia&apos;s learned her lesson — only smart moves from here.
-          </p>
+          <h1>{t("lucia_name")}</h1>
+          <h2>{t("lucia_subTitle")}</h2>
+          <p>{t("lucia_description")}</p>
         </div>
         <div className="lucia-2">
           <Image
             src="/images/lucia-2.webp"
             width="3840"
             height="2160"
-            alt="jason in the pool"
+            alt={t("lucia_image_alt_2")}
           />
         </div>
-        <p className="max-w-xl lg:ps-32 ps-10">
-          More than anything, Lucia wants the good life her mom has dreamed of
-          since their days in Liberty City — but instead of half-baked
-          fantasies, Lucia is prepared to take matters into her own hands.
-        </p>
+        <p className="max-w-xl lg:ps-32 ps-10">{t("lucia_more")}</p>
       </div>
     </section>
   );
